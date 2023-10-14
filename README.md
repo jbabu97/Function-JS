@@ -1,6 +1,7 @@
 # Function-JS
 - [Function](#Function)
 - [ThisKeyWordAndArrowFunction](#ThisKeyWordAndArrowFunction)
+- [IIFE](#IIFE)
 
  ### Function
 ### ThisKeyWordAndArrowFunction
@@ -34,6 +35,20 @@ const arrowFunction =  () => {
 
 arrowFunction();
 
+```
+### IIFE 
+```js
+  const iifeFunc1 = function(){
+      console.log(`IIFE_1: DB connected`);
+  }();
+  
+  (function iifeFunc2(){
+      console.log(`IIFE_2: DB connected`);
+  })();
+  
+  ((name)=> {
+      console.log(`${name}DB connected`);
+  })('Mongo');
 ```
 ### FunctionDeclare
   ```js
