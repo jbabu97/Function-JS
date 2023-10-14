@@ -1,9 +1,9 @@
 # Function-JS
 - [Function](#Function)
-- [ThisKeyWord](#ThisKeyWord)
+- [ThisKeyWordAndArrowFunction](#ThisKeyWordAndArrowFunction)
 
  ### Function
-### ThisKeyWord
+### ThisKeyWordAndArrowFunction
  
  ```js
  
@@ -21,7 +21,15 @@
   newUser.welcomeMessage();
  
   console.log(this);
-   
+
+const arrowFunction = function (){
+    let usrName = 'jBabau'
+    console.log(this.usrName);
+};
+
+const arrowFunction =  () => {
+    let usrName = 'jBabau'
+    console.log(this);
 };
 ```
 ### FunctionDeclare
