@@ -31,6 +31,9 @@ const arrowFunction =  () => {
     let usrName = 'jBabau'
     console.log(this);
 };
+
+arrowFunction();
+
 ```
 ### FunctionDeclare
   ```js
