@@ -1,7 +1,11 @@
-# Function-JS
+# JavaScriptRandomPractice
 - [Function](#Function)
 - [ThisKeyWordAndArrowFunction](#ThisKeyWordAndArrowFunction)
 - [IIFE](#IIFE)
+- [Date](#Date)
+- [Number](#Number)
+- [Operator](#Operator)
+- [Math](#Operator)
 
  ### Function
 ### ThisKeyWordAndArrowFunction
@@ -99,3 +103,68 @@ const addNumbers = function(num1, num2){
   // console.log(arrayIntoFunction(myArr));
   console.log(arrayIntoFunction([500,333, 555, 222,666]));
 ```
+### Date
+```js
+  const newDate = new Date();
+  
+  console.log(newDate);
+  console.log(newDate);
+  console.log(newDate.toTimeString());
+  console.log(newDate.toLocaleString());
+  console.log(newDate.toDateString());
+```
+### Number
+
+```js
+  const newNum = 45543;
+  
+  console.log(newNum.toFixed(2));
+  console.log(newNum.toExponential(3));
+  console.log(newNum.toLocaleString());
+  console.log(newNum.toPrecision(3));
+```
+
+### Operator
+```js
+const myNumOne = 29;
+const myNumTwo = 76;
+
+const add = myNumOne + myNumTwo;
+const sub = myNumOne - myNumTwo;
+const multi = myNumOne * myNumTwo;
+const divide = myNumOne / myNumTwo;
+const greater = myNumOne > myNumTwo;
+const less = myNumOne < myNumTwo;
+```
+
+### Math
+```js
+const randomMath = 123.456;
+
+ console.log(Math.round(randomMath));
+ console.log(Math.ceil(randomMath));
+ console.log(Math.floor(randomMath));
+
+const ranNum = Math.round(Math.random() *  10);
+console.log(ranNum);
+
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
