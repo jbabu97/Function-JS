@@ -6,6 +6,9 @@
 - [Number](#Number)
 - [Operator](#Operator)
 - [Math](#Operator)
+- [Rudecer](#Rudecer)
+- [Filter](#Filter)
+- [Map](#Map)
 
  ### Function
 ### ThisKeyWordAndArrowFunction
@@ -149,7 +152,97 @@ const ranNum = Math.round(Math.random() *  10);
 console.log(ranNum);
 
 ```
+### Ruduce
+```js
+   const products = [
+       {
+           product: 'JS coursr',
+           price: 444
+       },
+       {
+           product: 'PY coursr',
+           price: 777
+       },
+       {
+           product: 'Web Analytics coursr',
+           price: 333
+       },
+       {
+           product: 'Book keeping coursr',
+           price: 345
+       },
+   ];
+   
+   const myCart = products.reduce((acc, pd) => {
+       return acc + pd.price
+   }, 0);
+    console.log(myCart);
+```
+### Filter
 
+```js
+   const team = [
+       {
+           name: 'Tamim',
+           role: 'Batter'
+       },
+       {
+           name: 'Liton',
+           role: 'Batter'
+       },
+       {
+           name: 'Shakib',
+           role: 'Allrounder'
+       },
+       {
+           name: 'Imrul',
+           role: 'Batter'
+       },
+       {
+           name: 'Mashrafi',
+           role: 'Bowler'
+       },
+       {
+           name: 'Mustafiz',
+           role: 'Bowlwer'
+       },
+       {
+           name: 'Mushfiq',
+           role: 'Batter'
+       },
+       {
+           name: 'Miraz',
+           role: 'Allrounder'
+       },
+       {
+           name: 'Mahmudullah',
+           role: 'Batter'
+       },
+       {
+           name: 'Shanto',
+           role: 'Batter'
+       },
+   ];
+   
+   const batter =  team.filter((player) => player.role === 'Batter' );
+   console.log(batter);
+   const bowler =  team.filter((player) => player.role === 'Bowler' );
+   console.log(bowler);
+   const allrounder =  team.filter((player) => player.role === 'Allrounder' );
+   console.log(allrounder);
+```
+
+### Map
+
+```js
+    const myNumbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+    
+    const newNumbers = myNumbers
+                                .map(num => num * 10)
+                                .map(num => num + 1)
+                                .filter(num => num >= 49)
+    console.log(newNumbers);
+```
 
 
 
