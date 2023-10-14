@@ -1,14 +1,36 @@
 # Function-JS
 - [Function](#Function)
+- [ThisKeyWord](#ThisKeyWord)
 
  ### Function
+### ThisKeyWord
+ 
  ```js
-  const addNumbers = function(num1, num2){
-      // let result =  num1 + num2;
-      // return result;
-      return num1 + num2;
-  };
-  
+ 
+ const newUser = {
+      userName: "Babu",
+      id: 11097,
+      welcomeMessage: function(){
+         console.log(`${this.userName} , welcome to jBabu's website`);
+        console.log(this);
+     }
+ };
+ 
+  newUser.welcomeMessage();
+  newUser.userName= 'JabbarBabu'
+  newUser.welcomeMessage();
+ 
+  console.log(this);
+   
+};
+```
+### FunctionDeclare
+  ```js
+const addNumbers = function(num1, num2){
+       // let result =  num1 + num2;
+       // return result;
+       return num1 + num2;
+
   let result = addNumbers(8,9);
   
   console.log("Result: ", result);
